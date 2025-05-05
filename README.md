@@ -1,1 +1,1 @@
-Demo : https://belalmohamed99.github.io/SolarCompany/
+Domain : https://belalmohamed99.github.io/SolarCompany/
