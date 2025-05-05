@@ -1,0 +1,272 @@
+/***********************************************Extra Small devices (0px -> 639px) ****************************************************/
+@media (max-width: 639px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .main-section-text h1 {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+  .main-section-text {
+    width: 90%;
+  }
+  .logo-placeholder,
+  .call-us {
+    display: none;
+  }
+  .main-section-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .second-section-text {
+    width: 100%;
+  }
+  .main-section {
+    margin-top: 10px;
+  }
+  .main-section-buttons :last-child {
+    margin-left: 0;
+  }
+  .layer {
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+  }
+  .second-section-details {
+    flex-direction: column;
+  }
+
+  .flow-card {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .third-section-details p {
+    width: 100%;
+  }
+
+  .slider > p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .main-section-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .line-style {
+    top: 10%;
+  }
+  .subscribe-form button {
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+  }
+
+  .subscribe-form input {
+    border-radius: 30px 30px 0 0;
+  }
+  .fourth-section-cards,
+  .section-sixth,
+  .section-seventh-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .section-sixth-details {
+    width: 100%;
+  }
+
+  .section-sixth .cards {
+    grid-template-columns: 1fr;
+  }
+  .third-section-details button {
+    width: 100%;
+  }
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+}
+/**************************************************** Small devices (>= 640px) ********************************************************/
+@media all and (min-width: 640px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .logo-placeholder,
+  .call-us {
+    display: none;
+  }
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-section {
+    margin-bottom: 20px;
+  }
+  .layer {
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .flow-card {
+    position: static;
+    width: 100%;
+  }
+  .main-section-text h1,
+  .second-section-text h2,
+  .third-section-details h3,
+  .fourth-section-details h3,
+  .section-seventh-details h3 {
+    font-size: 40px;
+  }
+
+  .main-section-text p,
+  .third-section-details p,
+  .fourth-section-details p,
+  .section-seventh-details p {
+    font-size: 18px;
+  }
+
+  .main-section-text,
+  .second-section-text,
+  .third-section-details p,
+  .fourth-section-details,
+  .details,
+  .slider {
+    width: 100%;
+  }
+
+  .fourth-section-cards,
+  .section-sixth,
+  .section-seventh-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .section-sixth-details {
+    width: 100%;
+  }
+
+  .section-sixth .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .third-section-details button {
+    width: 100%;
+  }
+  .section-sixth .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/****************************************************Medium devices (>= 768px)*********************************************************/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 960px;
+  }
+  .logo-placeholder,
+  .call-us {
+    display: none;
+  }
+  .main-section-text h1 {
+    font-size: 48px;
+  }
+  .layer {
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+  }
+  .second-section-text h2 {
+    font-size: 40px;
+  }
+  .fourth-section-cards,
+  .section-sixth,
+  .section-seventh-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .section-sixth .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/********************************************************************** Large devices (>= 1024px) **************************************/
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 1140px;
+  }
+
+  .main-section-text h1 {
+    font-size: 56px;
+  }
+
+  .second-section-text h2,
+  .third-section-details h3,
+  .fourth-section-details h3,
+  .section-seventh-details h3 {
+    font-size: 48px;
+  }
+
+  .main-section-text p,
+  .third-section-details p,
+  .fourth-section-details p,
+  .section-seventh-details p {
+    font-size: 20px;
+  }
+
+  .section-sixth {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+  .layer {
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+  }
+  .section-sixth .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/********************************************************* Extra large devices (>= 1280px) *********************************************/
+@media all and (min-width: 1280px) and (max-width: 1535px) {
+}
+/****************************************************** 2x Large devices (>= 1536px) ***************************************************/
+@media all and (min-width: 1536px) {
+}

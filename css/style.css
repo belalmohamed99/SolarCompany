@@ -1,0 +1,694 @@
+/**************************************** Google Fonts  ************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/**************************************** Start Global Styles *******************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --main-color: #3cab90;
+  --main-color-hover: #34bf9c;
+  --secondary-color-hover: #ffca4d;
+  --secondary-color: #ffbb1c;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+img {
+  width: 100%;
+  display: block;
+}
+section {
+  padding: 42px 0;
+}
+.d-flex {
+  display: flex;
+}
+.nav-links li a,
+.cards-details a {
+  cursor: pointer;
+}
+/**************************************** End Global Styles *******************************************************/
+/**************************************** Start Navbar Styles *******************************************************/
+.navbar {
+  background-color: var(--main-color);
+  padding: 16px 0;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.logo-placeholder {
+  width: 200px;
+  height: 60px;
+  background-image: linear-gradient(
+      rgba(0, 70, 53, 0.655),
+      rgba(0, 70, 53, 0.655)
+    ),
+    url("../images/image 9.png");
+  background-position: center center;
+  background-size: cover;
+  margin-right: 100px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease;
+}
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+.nav-links li a.active {
+  background-color: #0f766e;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.call-us {
+  text-align: right;
+}
+.call-label {
+  font-size: 18px;
+  opacity: 0.85;
+  margin: 0;
+}
+.call-number {
+  font-size: 28px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  margin: 0;
+}
+/**************************************** End Navbar Styles *******************************************************/
+/**************************************** Start Main Styles *******************************************************/
+.bg-image {
+  background-image: url("../images/solar-panels-meadow 1.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.line-style {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  left: 0%;
+  span {
+    color: white;
+    margin: 0 10px;
+  }
+}
+.line::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 4px;
+  background-color: rgba(48, 48, 48, 0.581);
+}
+.line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.main-details-box {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.main-section-text {
+  color: white;
+  width: 50%;
+}
+.main-section-text h1 {
+  font-size: 60px;
+}
+.main-section-text p {
+  font-size: 26px;
+  margin: 26px 0;
+}
+.main-section-buttons :first-child {
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 24px;
+  color: white;
+  letter-spacing: 1.2px;
+  transition: background-color 0.2s ease-in-out;
+}
+.main-section-buttons :last-child {
+  border: none;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 24px;
+  letter-spacing: 1.2px;
+  margin-left: 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+.main-section-buttons :first-child:hover {
+  background-color: var(--main-color-hover);
+}
+.main-section-buttons :last-child:hover {
+  background-color: var(--secondary-color-hover);
+}
+/**************************************** End Main Styles *******************************************************/
+/**************************************** Start Second Styles *******************************************************/
+.second-section-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.second-section-text {
+  width: 50%;
+}
+.second-section-text h2 {
+  font-size: 60px;
+}
+.second-section-text .second-section-secondary-text {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  display: block;
+  margin: 30px 0;
+  font-weight: 300;
+}
+.order-list span {
+  color: #84bd3a;
+  letter-spacing: 3px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.order-list p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.flow-card {
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  position: absolute;
+  right: 20%;
+  bottom: 3%;
+  padding: 16px;
+}
+.flow-card img {
+  width: 150px;
+}
+.flow-card p {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #2a3334;
+}
+/**************************************** End Second Styles *******************************************************/
+/**************************************** Start Third Styles *******************************************************/
+.bg-image-third-section {
+  background-image: url("../images/8116 1.png");
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+}
+.third-section-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  gap: 40px;
+}
+.third-section-details h3 {
+  color: white;
+  font-size: 60px;
+}
+.third-section-details p {
+  color: white;
+  font-size: 30px;
+  width: 50%;
+}
+.third-section-details button {
+  border: none;
+  background-color: var(--secondary-color);
+  color: #2a3334;
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 24px;
+  letter-spacing: 1.2px;
+  transition: background-color 0.2s ease-in-out;
+  width: 15%;
+}
+.third-section-details button:hover {
+  background-color: var(--secondary-color-hover);
+}
+/**************************************** End Third Styles *******************************************************/
+/**************************************** Start Fourth Styles *******************************************************/
+.fourth-section-details {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.fourth-section-details h3 {
+  font-size: 60px;
+  margin-bottom: 26px;
+}
+.fourth-section-details p {
+  font-size: 22px;
+  color: #475467;
+}
+.fourth-section-cards {
+  display: flex;
+  width: 80%;
+  gap: 40px;
+  margin: 80px auto;
+}
+.card {
+  width: 33.33%;
+  margin: auto;
+  background-color: #a4a4a41c;
+  .cards-details {
+    padding: 20px;
+    h3 {
+      margin: 30px 0;
+    }
+    p {
+      margin: 30px 0;
+      color: #475467;
+    }
+    a {
+      text-decoration: none;
+      color: var(--main-color);
+      font-weight: 600;
+    }
+  }
+}
+/**************************************** End Fourth Styles *******************************************************/
+/**************************************** Start fifth Styles *******************************************************/
+.bg-image-fifth-section {
+  background-image: url("../images/8116\ 1\ \(1\).png");
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+.layer {
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.layer h3 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px 0 50px 0;
+}
+.layer p {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+/**************************************** End fifth Styles *******************************************************/
+/**************************************** Start Sixth Styles *******************************************************/
+.bg-section {
+  background-color: #ffbb1c0d;
+}
+.section-sixth {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+.section-sixth-details {
+  width: 50%;
+}
+.section-sixth-details i {
+  font-size: 32px;
+  color: var(--main-color);
+  background-color: #e3f4ee;
+  padding: 16px;
+  border-radius: 16px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.section-sixth-details h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1d1d1f;
+}
+.section-sixth-details p {
+  color: #475467;
+  line-height: 1.6;
+  font-size: 22px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex: 6;
+  gap: 24px;
+}
+.section-sixth-card {
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #f5fdfb;
+  transition: box-shadow 0.3s;
+}
+.section-sixth-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+.section-sixth-card img {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  height: 140px;
+  object-fit: cover;
+  background-color: #d2e9e1;
+}
+.section-sixth-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1d1d1f;
+}
+.section-sixth-card p {
+  color: #475467;
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.section-sixth-card a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+/**************************************** End Sixth Styles *******************************************************/
+/**************************************** Start Seventh Styles *******************************************************/
+.section-seventh-details {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-seventh-details h3 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1d1d1f;
+}
+.section-seventh-details p {
+  font-size: 20px;
+  color: #475467;
+}
+.section-seventh-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.section-seventh-card {
+  flex: 1 1 320px;
+  max-width: 380px;
+  border: 1px solid #c2e6d9;
+  background-color: #f5fdfb;
+  padding: 32px;
+  border-radius: 16px;
+  transition: box-shadow 0.3s;
+}
+.section-seventh-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+.section-seventh-card i {
+  font-size: 48px;
+  color: #1ca672;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+.section-seventh-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1d1d1f;
+}
+.section-seventh-card p {
+  font-size: 18px;
+  color: #475467;
+  line-height: 1.8;
+}
+/**************************************** End Seventh Styles *******************************************************/
+/**************************************** Start eighth Styles *******************************************************/
+.details {
+  flex: 1;
+}
+.details i {
+  font-size: 60px;
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 20px;
+}
+.details h3 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.details p {
+  font-size: 26px;
+  color: #444;
+}
+.slider {
+  flex: 2;
+  background-color: #3cab900f;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.slider span {
+  display: block;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.slider > p {
+  font-size: 30px;
+  color: #1c2b3a;
+  line-height: 1.7;
+  width: 70%;
+  margin: 30px 0;
+}
+.customer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.customer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customer p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.customer span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+.buttons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+}
+.buttons i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons i:hover {
+  background-color: #eee;
+}
+.testimonial .d-flex {
+  gap: 40px;
+  align-items: flex-start;
+}
+/**************************************** End eighth Styles *******************************************************/
+/**************************************** Start Footer Styles *******************************************************/
+.footer {
+  background-color: #2b3a4a;
+  color: #fff;
+}
+.footer-top {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-left .logo {
+  width: 250px;
+  margin-bottom: 20px;
+  height: 60px;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-links a:hover {
+  text-decoration: underline #999;
+}
+.footer-right p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.subscribe-form {
+  display: flex;
+  border: 1px solid #999;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 350px;
+}
+.subscribe-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+.subscribe-form input::placeholder {
+  color: #ccc;
+}
+.subscribe-form button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 30px 30px 0;
+}
+.subscribe-form button:hover {
+  background-color: var(--secondary-color-hover);
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 80%;
+}
+.footer-bottom {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+  color: #aaa;
+}
+.footer-bottom-links li {
+  position: relative;
+  padding-right: 10px;
+}
+.footer-bottom-links li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -20px;
+  color: #666;
+}
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  font-size: 14px;
+  color: #aaa;
+}
+/**************************************** End Footer Styles *******************************************************/
